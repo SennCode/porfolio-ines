@@ -5,11 +5,11 @@ const Home = () => {
   const [hoveredText, setHoveredText] = useState(null);
 
   return (
-    <div className="bg-white bg-[url(./assets/images/IMG_9EB17B5FFAD7-1.jpeg)] bg-no-repeat bg-right min-h-screen bg-cover flex justify-center items-center">
+    <div className="bg-white bg-[url(./assets/images/IMG_9EB17B5FFAD7-1.jpeg)] bg-no-repeat bg-right min-h-screen bg-auto md:bg-contain flex items-center">
       <div className="mx-6 justify-start py-10">
         <div className="px-8">
           <h1
-            className={`text-red-colour font-bold text-6xl sm:text-6xl md:text-9xl lg:text-9xl xl:text-9xl  
+            className={`text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl  
              transition-transform transform-gpu ${
                hoveredText === "Hello" ? "translate-x-8" : null
              }`}
@@ -22,7 +22,7 @@ const Home = () => {
           <h1
             className={`text ${
               hoveredText === "I am" ? "translate-x-8" : null
-            } font-bold text-6xl sm:text-6xl md:text-9xl lg:text-9xl xl:text-9xl 
+            } font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
              transition-transform transform-gpu`}
             onMouseEnter={() => setHoveredText("I am")}
             onMouseLeave={() => setHoveredText(null)}
@@ -33,7 +33,7 @@ const Home = () => {
           <h1
             className={`text ${
               hoveredText === "Inés" ? "translate-x-8" : null
-            } font-bold text-6xl sm:text-6xl md:text-9xl lg:text-9xl xl:text-9xl
+            } font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl
              transition-transform transform-gpu`}
             onMouseEnter={() => setHoveredText("Inés")}
             onMouseLeave={() => setHoveredText(null)}
