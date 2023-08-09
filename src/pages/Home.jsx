@@ -5,7 +5,7 @@ const Home = () => {
   const [hoveredText, setHoveredText] = useState(null);
 
   return (
-    <div className="bg-white bg-[url(src/assets/images/IMG_9EB17B5FFAD7-1.jpeg)] bg-no-repeat bg-right bg-contain min-h-screen flex items-center">
+    <div className="bg-white bg-[url(./assets/images/IMG_9EB17B5FFAD7-1.jpeg)] bg-no-repeat bg-right bg-contain min-h-screen flex items-center">
       <div className="mx-6 justify-start py-10">
         <div className="px-8">
           <h1
