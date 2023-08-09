@@ -4,8 +4,22 @@ import "../App.css";
 const Home = () => {
   const [hoveredText, setHoveredText] = useState(null);
 
+  const [currentText, setCurrentText] = useState("Hello.");
+
+  const handleTextChange = () => {
+    if (currentText === "Hello.") {
+      setCurrentText("About");
+    } else if (currentText === "About") {
+      setCurrentText("I am");
+    } else if (currentText === "I am") {
+      setCurrentText("Inés");
+    } else {
+      setCurrentText("Hello.");
+    }
+  };
+
   return (
-    <div className="bg-white bg-[url(./assets/images/IMG_9EB17B5FFAD7-1.jpeg)] bg-no-repeat bg-right min-h-screen bg-auto md:bg-contain flex items-center">
+    <div className="bg-white bg-[url(./assets/images/IMG_9EB17B5FFAD7-1.jpeg)] bg-no-repeat bg-right min-h-screen bg-auto md:bg-contain flex items-center" onClick={handleTextChange} >
       <div className="mx-6 justify-start py-10">
         <div className="px-8">
           <h1
