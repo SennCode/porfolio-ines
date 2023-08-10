@@ -21,15 +21,17 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        errorElement: <NotFound />
       },
       {
         path:"/work",
-        element: <Work/>
-
+        element: <Work/>,
+        errorElement: <NotFound />
       },
       {
         path: "/contact",
         element: <Contact />,
+        errorElement: <NotFound />
       },
     ],
   },
