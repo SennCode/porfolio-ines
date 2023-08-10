@@ -7,7 +7,6 @@ const Home = () => {
   const [textHello, setTextHello] = useState("Hello.");
   const [textIam, setTextIam] = useState("I am");
   const [textInes, setTextInes] = useState("Inés");
-  const [userClicked, setUserClicked] = useState(false);
 
   // onMouseEnter
 
@@ -53,7 +52,6 @@ const Home = () => {
 
   const handleClickText = () => {
     if (isMobile) {
-      setUserClicked(true);
       setTextHello(textHello === "Hello." ? "About" : "Hello.");
       setTextIam(textIam === "I am" ? "Work" : "I am");
       setTextInes(textInes === "Inés" ? "Contact" : "Inés");
@@ -73,21 +71,40 @@ const Home = () => {
               : ""
           } px-8`}
         >
-          <NavLink to="/about">
-            <h1
-              className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
-    transition-transform transform-gpu "
-              onMouseEnter={userClicked ? handleMouseEnterHello : null}
-              onMouseLeave={userClicked ? handleMouseLeaveHello : null}
-              onClick={handleClickText}
-            >
-              {textHello}
-            </h1>
-          </NavLink>
+          {isMobile && textHello === "About" ? (
+  <NavLink to="/about">
+    <h1
+      className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+      transition-transform transform-gpu "
+      onMouseEnter={handleMouseEnterHello}
+      onMouseLeave={handleMouseLeaveHello}
+    >
+      {textHello}
+    </h1>
+  </NavLink>
+) : (
+  !isMobile && ( <NavLink to="/about"><h1
+      className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+      transition-transform transform-gpu "
+      onMouseEnter={handleMouseEnterHello}
+      onMouseLeave={handleMouseLeaveHello}
+    >
+      {textHello}
+    </h1></NavLink>
+    
+  )
+)}
+
+
+          
         </div>
 
         <div
-          className={`${!isMobile}transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500 px-8`}
+          className={`${
+            !isMobile
+              ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500"
+              : ""
+          } px-8`}
         >
           <NavLink to="work">
             <h1
@@ -102,7 +119,11 @@ const Home = () => {
         </div>
 
         <div
-          className={`${!isMobile}transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500 px-8`}
+          className={`${
+            !isMobile
+              ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500"
+              : ""
+          } px-8`}
         >
           <NavLink to="/contact">
             <h1
