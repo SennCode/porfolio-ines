@@ -63,7 +63,7 @@ const Home = () => {
       onClick={handleClickText}
     >
       <div className="mx-20 py-10">
-        <div className="transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500 px-8">
+        <div className={`${!isMobile ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500" : ""} px-8`}>
           <h1
             className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
     transition-transform transform-gpu "
@@ -74,7 +74,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500 px-8">
+        <div className={`${!isMobile ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500" : ""} px-8`}>
           <h1
             className="animate-fade-up animate-once animate-duration-25000 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
             transition-transform transform-gpu"
@@ -85,7 +85,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500 px-8">
+        <div className={`${!isMobile ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500" : ""} px-8`}>
           <h1
             className="animate-fade-up animate-once animate-duration-40000 animate-delay-1000 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
             transition-transform transform-gpu"
