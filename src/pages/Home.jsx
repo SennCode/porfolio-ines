@@ -68,21 +68,32 @@ const Home = () => {
       <div className="mx-20 py-10">
         <div
           className={`${
-            (!isMobile||mobileClicked)
+            (!isMobile||mobileClicked || textHello === "About")
               ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500"
               : ""
           } px-8`}
         >
-          <NavLink to="/about">
+          {textHello === "About" ? (
+            <NavLink to="/about">
+              <h1
+                className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                transition-transform transform-gpu "
+                onMouseEnter={handleMouseEnterHello}
+                onMouseLeave={handleMouseLeaveHello}
+              >
+                {textHello}
+              </h1>
+            </NavLink>
+          ) : (
             <h1
               className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
-    transition-transform transform-gpu "
+              transition-transform transform-gpu "
               onMouseEnter={handleMouseEnterHello}
               onMouseLeave={handleMouseLeaveHello}
             >
               {textHello}
             </h1>
-          </NavLink>
+          )}
         </div>
 
         <div
