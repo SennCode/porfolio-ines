@@ -7,6 +7,7 @@ const Home = () => {
   const [textHello, setTextHello] = useState("Hello.");
   const [textIam, setTextIam] = useState("I am");
   const [textInes, setTextInes] = useState("Inés");
+  const [mobileClicked, setMobileClicked] = useState(false)
 
   // onMouseEnter
 
@@ -55,6 +56,7 @@ const Home = () => {
       setTextHello(textHello === "Hello." ? "About" : "Hello.");
       setTextIam(textIam === "I am" ? "Work" : "I am");
       setTextInes(textInes === "Inés" ? "Contact" : "Inés");
+      setMobileClicked(true)
     }
   };
 
@@ -66,7 +68,7 @@ const Home = () => {
       <div className="mx-20 py-10">
         <div
           className={`${
-            !isMobile
+            (!isMobile||mobileClicked)
               ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500"
               : ""
           } px-8`}
