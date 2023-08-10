@@ -52,8 +52,8 @@ const Home = () => {
   // handleClickText
 
   const handleClickText = () => {
-    setUserClicked(true);
     if (isMobile) {
+      setUserClicked(true);
       setTextHello(textHello === "Hello." ? "About" : "Hello.");
       setTextIam(textIam === "I am" ? "Work" : "I am");
       setTextInes(textInes === "Inés" ? "Contact" : "Inés");

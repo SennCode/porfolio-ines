@@ -6,6 +6,7 @@ const LayoutPublic = () => {
       <main>
         <Outlet />
       </main>
+      <footer>Cambio1</footer>
     </>
   );
 };
