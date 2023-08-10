@@ -7,7 +7,7 @@ const Home = () => {
   const [textHello, setTextHello] = useState("Hello.");
   const [textIam, setTextIam] = useState("I am");
   const [textInes, setTextInes] = useState("Inés");
-  const [mobileClicked, setMobileClicked] = useState(false)
+  const [userClicked, setUserClicked] = useState(false);
 
   // onMouseEnter
 
@@ -52,11 +52,11 @@ const Home = () => {
   // handleClickText
 
   const handleClickText = () => {
+    setUserClicked(true);
     if (isMobile) {
       setTextHello(textHello === "Hello." ? "About" : "Hello.");
       setTextIam(textIam === "I am" ? "Work" : "I am");
       setTextInes(textInes === "Inés" ? "Contact" : "Inés");
-      setMobileClicked(true)
     }
   };
 
@@ -68,32 +68,22 @@ const Home = () => {
       <div className="mx-20 py-10">
         <div
           className={`${
-            (!isMobile||mobileClicked || textHello === "About")
+            !isMobile
               ? "transition ease-in-out delay-950 hover:translate-x-10 hover:duration-1500"
               : ""
           } px-8`}
         >
-          {textHello === "About" ? (
-            <NavLink to="/about">
-              <h1
-                className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
-                transition-transform transform-gpu "
-                onMouseEnter={handleMouseEnterHello}
-                onMouseLeave={handleMouseLeaveHello}
-              >
-                {textHello}
-              </h1>
-            </NavLink>
-          ) : (
+          <NavLink to="/about">
             <h1
               className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
-              transition-transform transform-gpu "
-              onMouseEnter={handleMouseEnterHello}
-              onMouseLeave={handleMouseLeaveHello}
+    transition-transform transform-gpu "
+              onMouseEnter={userClicked ? handleMouseEnterHello : null}
+              onMouseLeave={userClicked ? handleMouseLeaveHello : null}
+              onClick={handleClickText}
             >
               {textHello}
             </h1>
-          )}
+          </NavLink>
         </div>
 
         <div
