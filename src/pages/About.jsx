@@ -9,7 +9,7 @@ const About = () => {
       </h1>
       <h3 className="text-white mt-20 mx-40 text-3xl">About</h3>
       <div className="text-white mt-5 mx-40 pb-40">
-        <p className="pb-5">Hi, I'm Inés, a passionate and creative fashion
+        <p className="pb-5 text-center sm:text-left">Hi, I'm Inés, a passionate and creative fashion
         designer with a deep love for blending style, elegance, and innovation.
         With a strong background in [mencionar tus áreas de especialización,
         como haute couture, sustainable fashion, etc.], I strive to bring my
