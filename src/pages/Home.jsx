@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Home.css";
+import "../App.css";
 import { isMobile } from "react-device-detect";
 import { NavLink } from "react-router-dom";
 
@@ -63,7 +63,7 @@ const Home = () => {
       className="bg-black bg-no-repeat bg-right min-h-screen bg-auto md:bg-cover flex justify-start items-center kenburns-bottom"
       onClick={handleClickText}
     >
-      <div className="mx-20 py-10">
+      <div className="mx-4 md:mx-20 lg:mx-24 py-10">
         {/* PRIMER H1 */}
         <div
           className={`${
@@ -76,7 +76,7 @@ const Home = () => {
             textHello === "About" ? (
               <NavLink to="/about">
                 <h1
-                  className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                  className="animate-fade-up animate-once animate-duration-300 animate-delay-100 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
         transition-transform transform-gpu "
                   onMouseEnter={handleMouseEnterHello}
                   onMouseLeave={handleMouseLeaveHello}
@@ -86,7 +86,7 @@ const Home = () => {
               </NavLink>
             ) : (
               <h1
-                className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                className="animate-fade-up animate-once animate-duration-300 animate-delay-100 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
                 onMouseEnter={handleMouseEnterHello}
                 onMouseLeave={handleMouseLeaveHello}
@@ -97,7 +97,7 @@ const Home = () => {
           ) : (
             <NavLink to="/about">
               <h1
-                className="animate-fade-up animate-once animate-duration-1500 animate-delay-10000 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                className="animate-fade-up animate-once animate-duration-300 animate-delay-100 animate-ease-in text-red-colour font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
                 onMouseEnter={handleMouseEnterHello}
                 onMouseLeave={handleMouseLeaveHello}
@@ -121,7 +121,7 @@ const Home = () => {
             textIam === "Work" ? (
               <NavLink to="/work">
                 <h1
-                  className="text-white animate-fade-up animate-once animate-duration-2500 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                  className="text-white animate-fade-up animate-once animate-duration-300 animate-delay-300 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
         transition-transform transform-gpu "
                   onMouseEnter={handleMouseEnterIam}
                   onMouseLeave={handleMouseLeaveIam}
@@ -131,7 +131,7 @@ const Home = () => {
               </NavLink>
             ) : (
               <h1
-                className=" text-white animate-fade-up animate-once animate-duration-2500 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                className=" text-white animate-fade-up animate-once animate-duration-300 animate-delay-300 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
                 onMouseEnter={handleMouseEnterIam}
                 onMouseLeave={handleMouseLeaveIam}
@@ -142,7 +142,7 @@ const Home = () => {
           ) : (
             <NavLink to="/work">
               <h1
-                className="text-white animate-fade-up animate-once animate-duration-2500 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                className="text-white animate-fade-up animate-once animate-duration-300 animate-delay-300 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
                 onMouseEnter={handleMouseEnterIam}
                 onMouseLeave={handleMouseLeaveIam}
@@ -164,7 +164,7 @@ const Home = () => {
             textInes === "Contact" ? (
               <NavLink to="/contact">
                 <h1
-                  className="text-white animate-fade-up animate-once animate-duration-40000 animate-delay-1000 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                  className="text-white animate-fade-up animate-once animate-duration-300 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
         transition-transform transform-gpu "
                   onMouseEnter={handleMouseEnterInes}
                   onMouseLeave={handleMouseLeaveInes}
@@ -174,7 +174,7 @@ const Home = () => {
               </NavLink>
             ) : (
               <h1
-                className="text-white animate-fade-up animate-once animate-duration-40000 animate-delay-1000 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                className="text-white animate-fade-up animate-once animate-duration-300 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
                 onMouseEnter={handleMouseEnterInes}
                 onMouseLeave={handleMouseLeaveInes}
@@ -185,7 +185,7 @@ const Home = () => {
           ) : (
             <NavLink to="/contact">
               <h1
-                className="text-white  animate-fade-up animate-once animate-duration-40000 animate-delay-1000 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
+                className="text-white  animate-fade-up animate-once animate-duration-300 animate-delay-500 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
                 onMouseEnter={handleMouseEnterInes}
                 onMouseLeave={handleMouseLeaveInes}

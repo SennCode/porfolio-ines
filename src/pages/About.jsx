@@ -1,16 +1,16 @@
 import Navbar from "../components/Navbar";
-import "../Home.css";
+import "../App.css";
 
 const About = () => {
   return (
     <div className="bg-black min-h-screen justify-center ">
       <div className="pt-20 mx-10 sm:mx-20 lg:mx-40 xl:mx-80 2xl:mx-96"><Navbar/></div>
      
-      <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl pt-20 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96">
+      <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl pt-20 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96 slide-in-blurred-bottom">
         I desing fashion products
       </h1>
-      <div className="text-white mt-25 pb-40 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96">
-      <h3 className="text-red-colour text-3xl sm:text-4xl mt-14 mb-14">About</h3>
+      <div className="text-white mt-25 pb-40 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96 slide-in-blurred-bottom-h3">
+      <h3 className="text-red-colour text-3xl sm:text-4xl mt-14 mb-14 ">About</h3>
       
         <p className="pb-5 sm:text-xl">Hi, I'm Inés, a passionate and creative fashion
         designer with a deep love for blending style, elegance, and innovation.
