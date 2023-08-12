@@ -197,12 +197,10 @@ const Home = () => {
             )}
           </div>
         </div>
-        {isMobile ? (
+        {isMobile && textHello === "Hello." && (
           <p className="heartbeat text-white text-center mt-10 text-xs">
             Tap 👇🏻 anywhere on the screen
           </p>
-        ) : (
-          ""
         )}
       </div>
     </div>
