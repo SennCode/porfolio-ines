@@ -23,6 +23,7 @@ const Navbar = () => {
                 to="/"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                className="text-2xl"
               >
                 {navText}
               </Link>
