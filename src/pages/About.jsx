@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import "../App.css";
-import profileImage from "../assets/images/prueba-bg.jpeg"; // Importa la imagen
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
   alt="Avatar" />
      
       <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl pt-10 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96 slide-in-blurred-bottom">
-        I desing fashion products
+      I Create Fashionable Designs
       </h1>
       <div className="text-white mt-25 pb-40 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96 slide-in-blurred-bottom-h3">
       

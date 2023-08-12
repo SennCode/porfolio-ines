@@ -18,7 +18,7 @@ const Home = () => {
 
   const handleMouseEnterIam = () => {
     if (!isMobile) {
-      setTextIam(textIam === "I am" ? "Work" : "I am");
+      setTextIam(textIam === "I am" ? "Projects" : "I am");
     }
   };
 
@@ -53,7 +53,7 @@ const Home = () => {
   const handleClickText = () => {
     if (isMobile) {
       setTextHello(textHello === "Hello." ? "About" : "Hello.");
-      setTextIam(textIam === "I am" ? "Work" : "I am");
+      setTextIam(textIam === "I am" ? "Projects" : "I am");
       setTextInes(textInes === "Inés" ? "Contact" : "Inés");
     }
   };
@@ -119,8 +119,8 @@ const Home = () => {
             } px-8`}
           >
             {isMobile ? (
-              textIam === "Work" ? (
-                <NavLink to="/work">
+              textIam === "Projects" ? (
+                <NavLink to="/projects">
                   <h1
                     className="text-white animate-fade-up animate-once animate-duration-300 animate-delay-300 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
         transition-transform transform-gpu "
@@ -141,7 +141,7 @@ const Home = () => {
                 </h1>
               )
             ) : (
-              <NavLink to="/work">
+              <NavLink to="/projects">
                 <h1
                   className="text-white animate-fade-up animate-once animate-duration-300 animate-delay-300 animate-ease-in font-bold text-7xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 
       transition-transform transform-gpu "
