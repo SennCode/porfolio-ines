@@ -2,8 +2,10 @@ import Navbar from "../components/Navbar";
 
 const Contact = () => {
   return (
-    <div className="bg-black min-h-screen mx-auto bg-cover pt-10 px-20">
-      <Navbar />
+    <div className="bg-black min-h-screen justify-center">
+      <div className="pt-20 mx-10 sm:mx-20 lg:mx-40 xl:mx-80 2xl:mx-96">
+        <Navbar />
+      </div>
       <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl pt-10 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96 slide-in-blurred-bottom">
         Connecting Threads, Uniting Visions: Let's Create Together
       </h1>
