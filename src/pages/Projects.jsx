@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
-import foto2 from "../assets/images/foto2.jpg";
-import montaxe_manton from "../assets/images/montaxe_manton.jpg";
-import foto3 from "../assets/images/foto3.jpg";
+import foto1 from "../assets/images/foto1.webp";
+
 
 const Projects = () => {
   return (
@@ -20,7 +19,7 @@ const Projects = () => {
           <div className="group relative">
             <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-auto">
               <img
-                src={foto2}
+                src={foto1}
                 alt="coleccion_1"
                 className="h-full w-full object-cover object-center"
               />
@@ -38,7 +37,7 @@ const Projects = () => {
           <div className="group relative">
             <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-auto">
               <img
-                src={montaxe_manton}
+                src={foto1}
                 alt="collecion 1"
                 className="h-full w-full object-cover object-center"
               />
@@ -56,7 +55,7 @@ const Projects = () => {
           <div className="group relative">
             <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-auto">
               <img
-                src={foto3}
+                src={foto1}
                 alt="Coleccion3"
                 className="h-full w-full object-cover object-center"
               />
