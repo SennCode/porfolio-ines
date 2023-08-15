@@ -42,7 +42,7 @@ const Projects = () => {
               </div>
               <h3 className="mt-6 text-sm text-gray-500">
                 
-                  Collection 2
+                  Collection 1
                 
               </h3>
               <p className="text-base font-semibold text-gray-900">Name</p>
