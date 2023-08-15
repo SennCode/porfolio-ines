@@ -1,9 +1,15 @@
-import { Lightbox, initTE } from "tw-elements";
+// Initialization for ES Users
+import {
+  Lightbox,
+  initTE,
+} from "tw-elements";
+
+initTE({ Lightbox });
 import Navbar from "../components/Navbar";
 import foto1 from "../assets/images/foto1.webp";
 import foto2 from "../assets/images/foto2.jpg";
 import foto3 from "../assets/images/foto3.jpg";
-initTE({ Lightbox });
+
 
 const Collection3 = () => {
   return (
