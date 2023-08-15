@@ -3,7 +3,7 @@ import "../App.css";
 
 const About = () => {
   return (
-    <div className="bg-black min-h-screen justify-center ">
+    <div className="bg-black min-h-screen justify-center">
       <div className="pt-20 mx-10 sm:mx-20 lg:mx-40 xl:mx-80 2xl:mx-96"><Navbar/></div>
       <img
   src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
