@@ -1,10 +1,10 @@
-// Initialization for ES Users
 import {
   Lightbox,
   initTE,
 } from "tw-elements";
 
 initTE({ Lightbox });
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import foto1 from "../assets/images/foto1.webp";
 import foto2 from "../assets/images/foto2.jpg";
@@ -12,6 +12,10 @@ import foto3 from "../assets/images/foto3.jpg";
 
 
 const Collection1 = () => {
+  useEffect(() => {
+    // Inicializa los componentes de tw-elements solo una vez
+    initTE({ Lightbox });
+  }, []);
   return (
     <div className="bg-black min-h-screen justify-center pb-20">
       <div className="pt-20 mx-10 sm:mx-20 lg:mx-40 xl:mx-80 2xl:mx-96">
