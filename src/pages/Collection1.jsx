@@ -13,9 +13,10 @@ const Collection1 = () => {
       </div>
       <div>
         <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl pt-10 mx-10 sm:mx-20 lg:mx-30 xl:mx-60 2xl:mx-96 slide-in-blurred-bottom">
-          Collection 1
+          Collection 2
         </h1>
       </div>
+
       <div
         data-te-lightbox-init
         className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 slide-in-blurred-bottom"

@@ -9,4 +9,4 @@ export default {
   },
   plugins: [require('tailwindcss-animated'), require("tw-elements/dist/plugin.cjs")],
   darkMode: "class"
-}
+};
