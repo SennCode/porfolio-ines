@@ -8,6 +8,10 @@ const Home = () => {
   const [textIam, setTextIam] = useState("I am");
   const [textInes, setTextInes] = useState("Inés");
 
+
+  // Se hace la lógica para que en dispositivos móviles funcione de un modo 
+  // y en desktop de otro cuando ponemos el mouse encima
+
   // onMouseEnter
 
   const handleMouseEnterHello = () => {
@@ -48,7 +52,8 @@ const Home = () => {
     }
   };
 
-  // handleClickText
+  // handleClickText lo usamos para que al clicar en la pantalla 
+  // de dispositivos móviles nos cambie los textos
 
   const handleClickText = () => {
     if (isMobile) {
